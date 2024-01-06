@@ -21,14 +21,6 @@ ggvenn_4 <-
             text_size=5) + 
   theme_void()+
   coord_fixed() 
-  
-  # labs(title = "Example of ggvenn:: geom_venn function",
-  #      subtitle = "processed charts with geom_venn()",
-  #      caption = "Visualization by DataCharm") +
-  # theme(plot.title = element_text(hjust = 0.5,vjust = .5,color = "black",face = 'bold',
-  #                                 size = 20, margin = margin(t = 1, b = 12)),
-  #       plot.subtitle = element_text(hjust = 0,vjust = .5,size=15),
-  #       plot.caption = element_text(face = 'bold',size = 12))
 pdf(paste0(out.dir, out.prefix, "vennDEGALL2.pdf"), width = 9, height = 9)
 ggvenn_4
 dev.off()
