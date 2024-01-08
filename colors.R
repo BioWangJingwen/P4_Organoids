@@ -2,7 +2,8 @@ library(ggsci)
 library(RColorBrewer)
 
 col.seq <- c(ATAC = "turquoise", RNA = "seagreen2", WES = "tan1")
-col.source <- c(Normal = "springgreen4", Primary = "orangered", Metastatic = "firebrick4")
+# col.source <- c(Normal = "springgreen4", Primary = "orangered", Metastatic = "firebrick4")
+col.source <- c(Normal = "#71ABB6", Primary = "#F0B57D", Metastatic = "#C75C64")
 
 col.exp1 <- c("#3C87C8", "#FFFFFF", "#EB5D1D")
 col.exp2 <- c("darkgreen", "#C7E5C9", "darkred")
@@ -37,6 +38,7 @@ col.sub1 <- c(TNBC = "dodgerblue", `HR+, HER2-` = "brown1", `HR+, HER2+` = "ligh
 col.deg <-
   c("#71ABB6", "#F0B57D", "#D3E1AE", "#C75C64")
 names(col.deg) <- c("NvsPM", "PvsN", "MvsP_down", "MvsP_up")
+# "#FFFFFF" "#F1D6D8" "#E3ADB1" "#D5848A" "#C75C64"
 
 col.muType <- c(Organoid = "#0099FF", Tissue = "#666699")
 # col.mu <- c(c('Frame_Shift_Del' = "#45EDCC",'Missense_Mutation' = "#3EBDEE",
@@ -65,6 +67,5 @@ col.Epi <-
 col.EnDB <-
   c(GOBP = '#f9bdb0', GOCC = '#aacebc', GOMF = '#ead295', KEGG = '#8db0c5', REACTOME = '#ffddbb')
 
-
-
+col.sig <- c("ns" = "white",  "*" = "#FFEBEDFF",   "**" =  "#FFCCD2FF",   "***" = "#EE9999FF",  "****" = "#E57272FF")
 
